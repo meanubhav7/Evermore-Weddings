@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wedding-canvas: #F7F5F0;
+  --color-wedding-canvas-light: #FAF8F5;
+  --color-wedding-sand: #E6DEC9;
+  --color-wedding-sand-dark: #DDD4BD;
+  --color-wedding-terracotta: #8C6249;
+  --color-wedding-terracotta-dark: #78533D;
+  --color-wedding-olive: #5D6353;
+  --color-wedding-olive-dark: #4C5243;
+  --color-wedding-charcoal: #2C2A29;
+  --color-wedding-charcoal-light: #3D3A39;
+  --color-wedding-muted: #736F69;
+  --color-wedding-border: #DCD5C4;
+
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+}
+
+:root {
+  --background: #F7F5F0;
+  --foreground: #2C2A29;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F7F5F0;
+  color: #2C2A29;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #F7F5F0;
+  color: #2C2A29;
+  font-family: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #8C6249;
+  color: #F7F5F0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CCB6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C6249;
+}
+
+/* Luxury button animation utilities */
+.btn-luxury-outline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2C2A29;
+  color: #2C2A29;
+  background: transparent;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.btn-luxury-outline:hover {
+  background-color: #2C2A29;
+  color: #F7F5F0;
+}
+
+.btn-luxury-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C2A29;
+  color: #F7F5F0;
+  border: 1px solid #2C2A29;
+  padding: 0.85rem 2.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-luxury-solid:hover {
+  background-color: transparent;
+  color: #2C2A29;
+}
+
+.btn-luxury-terracotta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8C6249;
+  color: #F7F5F0;
+  border: 1px solid #8C6249;
+  padding: 0.85rem 2.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-luxury-terracotta:hover {
+  background-color: #78533D;
+  border-color: #78533D;
+}
